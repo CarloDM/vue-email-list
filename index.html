@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  <script src="https://unpkg.com/vue@3"></script>
   <title>vue email list</title>
 </head>
 <body>
+  <ul id="app" class="container">
+    <li v-for="email in emails">{{email}}</li>
+  </ul>
 
   <script src="js/script.js"></script>
 </body>
